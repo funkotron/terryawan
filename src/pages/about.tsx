@@ -22,12 +22,18 @@ const About = () => {
         py={[6, 6, 6, 8]}
         px={[6, 6, 8, 6, 8, 13]}
       >
-        <h1>Terry Awan</h1>
+        <h1>Terry Awan Photography</h1>
+        <p>Terry grew up with access to one of nature's most precious beauties, the game reserves of Kenya.
+        It was here he developed his passion for capturing the marvels of wildlife on film.</p>
+        <p>Over the years his work has evolved to leverage the latest advances in digital post processing, and
+        as his passport stamps have multiplied, so too has the range of subject matter, with a growing focus upon landscape.
+          </p>
+
         <p>
-          I was born in Kenya and grew up with direct access to natures beauty and a passion for capturing it on film. Over the years my work has progressed into digital and more landscape photography. You can purchase prints and license my photos.
+          To purchase Terry's prints and license his photos please contact by email.
         </p>
         <p>
-          <a href="mailto:terry@terryawan.com">Contact Me</a> - <a href="https://www.instagram.com/terryawan77">Follow my Instagram</a>
+          <a href="mailto:terry@terryawan.com">Contact Terry</a> - <a href="https://www.instagram.com/terryawan77">Follow Terry's Instagram</a>
         </p>
       </AnimatedBox>
     </Layout>
