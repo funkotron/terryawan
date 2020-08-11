@@ -13,7 +13,7 @@ const PBox = styled(AnimatedBox)`
   margin: 0 auto;
 `;
 
-const Content = styled(Box)<{ bg: string }>`
+const Content = styled(Box) <{ bg: string }>`
   background-color: ${(props) => transparentize(0.9, props.bg)};
 
   .gatsby-image-wrapper:not(:last-child) {
@@ -39,7 +39,7 @@ const Description = styled(animated.div)`
   line-height: 1.58;
 `;
 
-const PButton = styled(Button)<{ color: string }>`
+const PButton = styled(Button) <{ color: string }>`
   background: ${(props) => (props.color === "white" ? "black" : props.color)};
   color: ${(props) =>
     readableColor(props.color === "white" ? "black" : props.color)};
@@ -142,10 +142,12 @@ const Project: React.FunctionComponent<PageProps> = ({
         </PBox>
       </Content>
       <PBox style={{ textAlign: "center" }} py={10} px={[6, 6, 8, 10]}>
-        <h2>Want to start your own project?</h2>
-        <PButton color={project.color} py={4} px={8}>
-          Contact Us
-        </PButton>
+        <h2>Want to use my photos or buy prints?</h2>
+        <a href="mailto:terry@terryawan.com">
+          <PButton color={project.color} py={4} px={8}>
+            Contact Me
+          </PButton>
+        </a>
       </PBox>
     </Layout>
   );

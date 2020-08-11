@@ -107,10 +107,10 @@ const PartialNavLink = ({
   children: React.ReactNode;
   to: string;
 }) => (
-  <Link getProps={isPartiallyActive} to={to} {...rest}>
-    {children}
-  </Link>
-);
+    <Link getProps={isPartiallyActive} to={to} {...rest}>
+      {children}
+    </Link>
+  );
 
 const Wrapper = styled.div`
   display: grid;
@@ -124,7 +124,7 @@ const Wrapper = styled.div`
   }
 `;
 
-const SideBarInner = styled(Box)<{ bg: string }>`
+const SideBarInner = styled(Box) <{ bg: string }>`
   position: fixed;
   height: 100%;
   width: ${(props) => props.theme.sidebarWidth.big};
@@ -149,7 +149,7 @@ const SideBarInner = styled(Box)<{ bg: string }>`
   }
 `;
 
-const Nav = styled(Flex)<{ color: string }>`
+const Nav = styled(Flex) <{ color: string }>`
   a {
     text-decoration: none;
     color: ${(props) => readableColor(`${props.color}`)};
@@ -266,7 +266,7 @@ const Layout = ({ children, color }: LayoutProps) => {
           <Main>{children}</Main>
           <Footer color={color}>
             <Box p={[6, 6, 8]} fontSize={0}>
-              Copyright <a href="">Terry Awan</a>
+              Copyright <a href="mailto:terry@terryawan.com">Terry Awan</a>
               <br />
             </Box>
           </Footer>
